@@ -5,6 +5,10 @@
     border-bottom: 2px solid black;
     overflow: scroll;
     white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .menu::-webkit-scrollbar {
