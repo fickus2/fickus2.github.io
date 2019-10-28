@@ -1,0 +1,27 @@
+.menu {
+    /*     background: #0000004a; */
+        height: 50px;
+        padding-left: 2.5px;
+        border-bottom: 2px solid black;
+    }
+    
+    .menu a {
+        line-height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 10px;
+        margin: 0;
+        background: white;
+        transition-duration: .15s;
+        user-select: none;
+    }
+    
+    .menu a:hover {
+        color: white;
+        background: black;
+    }
+    
+    .menu a:active {
+        color: white;
+        background: gray;
+    }
