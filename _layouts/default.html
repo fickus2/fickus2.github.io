@@ -7,10 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SmA - {{ page.title }}</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/lib/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 
 <body>
+    <div class="menu">
+        <a onclick="link('/index.html')">Home</a>
+        <a onclick="link('/projects/index.html')">Projects</a>
+        <a onclick="link('/games/index.html')">Games</a>
+        <a onclick="link('/web/index.html')">Web</a>
+        <a onclick="link('/memories/index.html')">Memories</a>
+    </div>
     <div class="container">
         {{ content }}
     </div>
