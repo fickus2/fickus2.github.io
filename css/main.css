@@ -70,7 +70,7 @@ h1, h2, h3 {
 }
 
 .parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover !important;
 }
