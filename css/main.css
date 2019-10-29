@@ -6,7 +6,7 @@ body {
 
 @media (min-width: 979px) {
     /* Large desktop */
-    .container {
+    .container p, .container img, .container h1, .container h2, .container h3, .container h4 {
         margin-left: 15%;
         margin-right: 15%;
     }
@@ -14,11 +14,15 @@ body {
     .container img {
         max-height: 600px;
     }
+
+    .parallax {
+        height: 600px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
     /* Portrait tablet to landscape and desktop */
-    .container {
+    .container p, .container img, .container h1, .container h2, .container h3, .container h4 {
         margin-left: 8%;
         margin-right: 8%;
     }
@@ -26,17 +30,25 @@ body {
     .container img {
         max-height: 600px;
     }
+
+    .parallax {
+        height: 600px;
+    }
 }
 
 @media (max-width: 767px) { 
     /* Landscape phone to portrait tablet */
-    .container {
+    .container p, .container img, .container h1, .container h2, .container h3, .container h4 {
         margin-left: 1%;
         margin-right: 1%;
     }
 
     .container img {
         max-height: 400px;
+    }
+
+    .parallax {
+        height: 400px;
     }
 }
 
@@ -55,4 +67,11 @@ h1, h2, h3 {
     object-fit: contain;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+.parallax {
+    background: url(https://teoys.github.io/images/screenshots/scr1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
