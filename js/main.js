@@ -9,3 +9,10 @@ function link(path) {
         });
     });
 }
+
+function createParallax(image) {
+    var par = document.createElement("div");
+    par.className = "parallax";
+    $(par).css("background", `url(${image})`);
+    $(".blurb").append(par);
+}
