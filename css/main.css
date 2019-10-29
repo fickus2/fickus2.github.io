@@ -70,7 +70,6 @@ h1, h2, h3 {
 }
 
 .parallax {
-    background: url(https://teoys.github.io/images/screenshots/scr1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
