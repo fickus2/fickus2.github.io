@@ -25,6 +25,16 @@
         <a onclick="link('/web/index.html')">Web</a>
         <a onclick="link('/memories/index.html')">Memories</a>
     </div>
+    <canvas class="bg"></canvas>
+    <script>
+    Particles.init({
+	    selector: '.bg',
+	    color: '#555555',
+	    connectParticles: false,
+	    speed: 0.15,
+	    maxParticles: 200
+    })
+    </script>
     <div class="container">
         {{ content }}
     </div>
