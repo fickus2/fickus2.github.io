@@ -1,6 +1,6 @@
 .menu {
     height: 40px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     overflow: scroll;
     white-space: nowrap;
     position: fixed;
@@ -9,7 +9,7 @@
     width: 100%;
     display: flex;
     z-index: 9;
-    background: white;
+    background: black;
     cursor: pointer;
 }
 
@@ -48,14 +48,14 @@
     font-weight: bold;
     padding: 0px 10px;
     margin: 5px 0;
-    background: white;
+    background: black;
     transition-duration: .15s;
     user-select: none;
 }
 
 .menu a:hover {
-    color: white;
-    background: black;
+    color: black;
+    background: white;
 }
 
 .menu a:active {
