@@ -76,3 +76,11 @@ h1, h2, h3 {
     background-position: center !important;
     background-size: cover !important;
 }
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
