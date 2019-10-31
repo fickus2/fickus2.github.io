@@ -10,6 +10,7 @@
     display: flex;
     z-index: 9;
     background: white;
+    cursor: pointer;
 }
 
 
