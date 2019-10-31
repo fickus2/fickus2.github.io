@@ -22,3 +22,8 @@ function createParallax(place, image) {
     $(par).css("background", `url(${image})`);
     $(".blurb").append(par);
 }
+
+function toggleVisibility(element) {
+	if ($(element).css("display") == "block") $(element).css("display", "none")
+	else if ($(element).css("display") == "none") $(element).css("display", "block")
+}
