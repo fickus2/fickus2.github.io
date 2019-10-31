@@ -20,5 +20,5 @@ function createParallax(place, image) {
     var par = document.createElement("div");
     par.className = "parallax";
     $(par).css("background", `url(${image})`);
-    $(place).append(par);
+    $(".blurb").append(par);
 }
