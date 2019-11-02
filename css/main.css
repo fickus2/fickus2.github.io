@@ -78,7 +78,7 @@ h1, h2, h3 {
 }
 
 .bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
