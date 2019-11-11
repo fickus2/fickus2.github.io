@@ -24,6 +24,12 @@ function createParallax(place, image) {
 }
 
 function toggleVisibility(element) {
-	if ($(element).css("display") == "block") $(element).css("display", "none")
-	else if ($(element).css("display") == "none") $(element).css("display", "block")
+	if ($(element).css("display") == "block") {
+		$('.texttobehidden').animate({opacity: 0}, 100, () => {
+			$(element).css("display", "none")
+		});
+	} else if ($(element).css("display") == "none") {
+		$(element).css("display", "block")
+		$(element).animate({opacity: 1}, 250);
+	} 
 }
