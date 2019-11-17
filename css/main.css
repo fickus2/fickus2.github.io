@@ -115,3 +115,20 @@ h2 button:active {
     color: black;
     transform: scale(0.95);
 }
+
+button {
+    border-radius: 5px;
+    padding: 5px;
+    background: none;
+    border: none;
+    transition-duration: .1s;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+button:active {
+    background-color: rgba(76, 76, 76, 0.25);
+}
