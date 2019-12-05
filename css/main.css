@@ -76,3 +76,7 @@ h1, h2, h3 {
     background-position: center !important;
     background-size: cover !important;
 }
+.parallax {
+    min-height: 400px;
+    background: transparent;
+}
