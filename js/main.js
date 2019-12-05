@@ -23,7 +23,14 @@ function createParallax(place, image) {
     $(".blurb").append(par);
 }
 
-function toggleVisibility(element) {
-	if ($(element).css("display") == "block") $(element).css("display", "none")
-	else if ($(element).css("display") == "none") $(element).css("display", "block")
+function toggleVisibility(name) {
+	var pr = `p[name="${name}"]`;
+	if ($(pr).css("display") == "block") {
+		$(pr).animate({opacity: 0}, 100, () => {
+			$(pr).css("display", "none")
+		});
+	} else if ($(pr).css("display") == "none") {
+		$(pr).css("display", "block")
+		$(pr).animate({opacity: 1}, 250);
+	} 
 }
