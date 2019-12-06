@@ -4,7 +4,7 @@ function link(path) {
         $.get(path, data => {
             $(".container").html($(".blurb", data))
             $(".container").fadeIn(150)
-			initParallax()
+			$(".blurb").append("<script>initParallax();</script>")
             p = path.replace("index.html", "")
             history.pushState(p, p, p)
         })
