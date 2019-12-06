@@ -34,3 +34,12 @@ function toggleVisibility(name) {
 		$(pr).animate({opacity: 1}, 250);
 	} 
 }
+
+function initParallax() {
+	var list = document.querySelectorAll("div[data-src]");
+
+	for (var i = 0; i < list.length; i++) {
+		var url = list[i].getAttribute('data-src');
+		list[i].style.backgroundImage="url('" + url + "')";
+	}
+}
