@@ -3,9 +3,10 @@ function link(path) {
         // $(".loading").fadeIn(150);
         $.get(path, data => {
             $(".container").html($(".blurb", data))
-            $(".container").fadeIn(150);
-            p = path.replace("index.html", "");
-            history.pushState(p, p, p);
+            $(".container").fadeIn(150)
+			initParallax()
+            p = path.replace("index.html", "")
+            history.pushState(p, p, p)
         })
 //         $(".container").load(path + " .blurb", function () {
 //             // $(".loading").fadeOut(150);
