@@ -17,13 +17,6 @@ function link(path) {
     });
 }
 
-function createParallax(place, image) {
-    var par = document.createElement("div");
-    par.className = "parallax";
-    $(par).css("background", `url(${image})`);
-    $(".blurb").append(par);
-}
-
 function toggleVisibility(name) {
 	var pr = `p[name="${name}"]`;
 	if ($(pr).css("display") == "block") {
@@ -41,6 +34,6 @@ function initParallax() {
 
 	for (var i = 0; i < list.length; i++) {
 		var url = list[i].getAttribute('data-src');
-		list[i].style.backgroundImage="url('" + url + "')";
+		list[i].style.backgroundImage="url(" + url + ")";
 	}
 }
