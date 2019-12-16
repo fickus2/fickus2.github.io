@@ -1,20 +1,14 @@
 function link(path) {
-    $(".container").fadeOut(150, function () {
-        // $(".loading").fadeIn(150);
-        $.get(path, data => {
-            $(".container").html($(".blurb", data))
-            $(".container").fadeIn(150)
-			$(".blurb").append("<script>initParallax(); console.log('done')</script>")
-            p = path.replace("index.html", "")
-            history.pushState(p, p, p)
-        })
-//         $(".container").load(path + " .blurb", function () {
-//             // $(".loading").fadeOut(150);
-//             $(".container").fadeIn(150);
-//             p = path.replace("index.html", "");
-//             history.pushState(p, p, p);
-//         });
-    });
+	$(".container").fadeOut(150, function () {
+		// $(".loading").fadeIn(150);
+		$.get(path, data => {
+		$(".container").html($(".blurb", data))
+			$(".container").fadeIn(150)
+			p = path.replace("index.html", "")
+			history.pushState(p, p, p)
+			$(".blurb").append("<script>initParallax();</script>")
+		})
+	});
 }
 
 function toggleVisibility(name) {
@@ -34,6 +28,8 @@ function initParallax() {
 
 	for (var i = 0; i < list.length; i++) {
 		var url = list[i].getAttribute('data-src');
-		list[i].style.backgroundImage="url(" + url + ")";
+		list[i].style.backgroundImage="url(" + window.location.href + url + ")";
 	}
+	
+	console.log(`Successfully initialized ${list.length} parallax containers.`)
 }
