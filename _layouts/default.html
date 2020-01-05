@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/menu.css">
 
-    <link rel="stylesheet" href="/css/sraka/s1.css">
-    <link rel="stylesheet" href="/css/sraka/s2.css">
+    <link rel="stylesheet" href="/css/lib/jquery.parascroll.css">
 
     <script src="/js/lib/particles.min.js"></script>
     <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/jquery.parascroll.js"></script>
+<!--     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script> -->
     <script src="/js/main.js"></script>
 </head>
 
@@ -33,6 +34,7 @@
     <script>player.volume = 0.1;</script>
     <div class="container">
         {{ content }}
+        <script>initParallax()</script>
     </div>
 </body>
 
