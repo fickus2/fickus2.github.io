@@ -71,6 +71,11 @@ h1, h2, h3 {
     border-radius: 5px;
 }
 
+.container p img {
+    float: right;
+    width: fit-content;
+}
+
 .parallax {
     background-attachment: fixed !important;
     background-position: center !important;
