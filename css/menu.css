@@ -9,7 +9,7 @@
     width: 100%;
     display: flex;
     z-index: 9;
-    background: black;
+    background: rgba(0, 0, 0, 0.75);
     cursor: pointer;
 }
 
@@ -48,7 +48,7 @@
     font-weight: bold;
     padding: 0px 10px;
     margin: 5px 0;
-    background: black;
+    background: transparent;
     transition-duration: .15s;
     user-select: none;
 }
