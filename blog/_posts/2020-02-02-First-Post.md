@@ -6,4 +6,4 @@ description: Short description.
 
 Some text.
 
-<div><img src="/games/streetlamp.png"></div>
+![An Image.](/games/streetlamp.png){:class="normal"}
