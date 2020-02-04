@@ -6,4 +6,4 @@ description: Short description.
 
 Some text.
 
-![Some picture.](/games/streetlamp.png)
+<div><img src="/games/streetlamp.png"></div>

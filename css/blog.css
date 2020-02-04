@@ -17,3 +17,24 @@ li a {
 li a:active {
     color: gray;
 }
+
+article li {
+    list-style-type: unset
+}
+
+article h1 {
+    font-size: 40px;
+}
+
+article h2 {
+    font-size: 35px;
+}
+
+article h3 {
+    font-size: 30px;
+}
+
+article h4 {
+    font-size: 25px;
+    margin: 0;
+}
