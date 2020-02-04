@@ -4,6 +4,6 @@ title: The First Post.
 description: Short description.
 ---
 
-Some text.
+The first post ever!
 
-![](/games/streetlamp.png){:class="normal"}
+![](/games/streetlamp.png){:class="norm"}
