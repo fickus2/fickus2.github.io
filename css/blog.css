@@ -1,0 +1,19 @@
+div.date {
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    transition-duration: .15s;
+}
+
+li a:active {
+    color: gray;
+}
