@@ -142,3 +142,12 @@ button:active {
     min-height: 400px;
     background: transparent;
 }
+
+p.credits {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.65);    
+    user-select: text;
+}
+
