@@ -151,3 +151,49 @@ p.credits {
     user-select: text;
 }
 
+div.games {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.games div.game {
+    border: 1px solid;
+    flex-grow: 1;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    width: 100px;
+    height: 400px;
+    background: url("/games/img/streetlamp.png");
+    padding: 25px;
+    background-size: cover;
+    background-position: center;
+    transition-duration: .15s;
+    background-blend-mode: darken;
+}
+
+div.games div.game:last-child {
+    margin-right: 0;
+}
+
+div.games div.game:hover {
+    box-shadow: 0 0 10px 10px white;
+    background-color: rgba(0, 0, 0, 0.25)
+}
+
+div.games div.game:active {
+    box-shadow: 0 0 10px 5px white;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+div.games div.game p.name {
+    margin: 0;
+}
+
+div.games div.game p.desc {
+    opacity: 0;
+    transition-duration: .15s;
+}
+
+div.games div.game:hover p.desc, div.games div.game:active p.desc {
+    opacity: 1;
+}
