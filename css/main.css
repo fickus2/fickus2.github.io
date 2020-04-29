@@ -154,6 +154,7 @@ p.credits {
 div.games {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 div.games div.game {
@@ -161,13 +162,14 @@ div.games div.game {
     flex-grow: 1;
     margin-right: 25px;
     margin-bottom: 25px;
-    width: 100px;
+    max-width: 250px;
+    width: 250px;
     height: 400px;
-    background: url("/games/img/streetlamp.png");
+    background: attr(bg url);
     padding: 25px;
     background-size: cover;
     background-position: center;
-    transition-duration: .15s;
+    transition-duration: .1s;
     background-blend-mode: darken;
 }
 
