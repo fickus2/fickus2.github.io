@@ -166,12 +166,13 @@ div.games div.game {
     max-width: 250px;
     width: 250px;
     height: 400px;
-    background: attr(bg url);
+    background: var(--bg);
     padding: 25px;
     background-size: cover;
     background-position: center;
     transition-duration: .1s;
     background-blend-mode: darken;
+    user-select: none;
 }
 
 div.games div.game:last-child {
@@ -199,4 +200,13 @@ div.games div.game p.desc {
 
 div.games div.game:hover p.desc, div.games div.game:active p.desc {
     opacity: 1;
+}
+
+div.games div.game.open {
+    position: fixed;
+    max-width: none;
+    width: calc(100vw - 52px);
+    height: calc(100vh - 92px);
+    left: 0;
+    top: 40px;
 }
