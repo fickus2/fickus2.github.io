@@ -197,7 +197,7 @@ div.games div.game p.desc {
     opacity: 0;
     transition-duration: .15s;
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 div.games div.game:hover p.desc, div.games div.game:active p.desc {
