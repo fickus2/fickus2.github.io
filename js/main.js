@@ -2,7 +2,8 @@ function link(path) {
 	$(".container").fadeOut(150, function () {
 		p = path.replace("/index.html", "")
 		p = path.replace("index.html", "")
-		$.get(p + "/index.html", data => {
+		if p.search("blog") p += "/index.html"
+		$.get(p, data => {
 		$(".container").html($(".blurb", data))
 			$(".container").fadeIn(150)
 			history.pushState(p, p, p)
