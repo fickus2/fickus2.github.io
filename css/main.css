@@ -6,6 +6,10 @@ body {
     color: white;
 }
 
+a {
+    color: white;
+}
+
 @media (min-width: 979px) {
     /* Large desktop */
     .blurb {
