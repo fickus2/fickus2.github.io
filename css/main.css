@@ -151,14 +151,14 @@ p.credits {
     user-select: text;
 }
 
-div.games {
+div.cardContainer {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
     justify-content: center;
 }
 
-div.games div.game {
+div.cardContainer div.card {
     border: 1px solid;
     flex-grow: 1;
     margin-right: 25px;
@@ -173,34 +173,35 @@ div.games div.game {
     transition-duration: .1s;
     background-blend-mode: darken;
     user-select: none;
-}
-
-div.games div.game:hover {
-    box-shadow: 0 0 10px 10px white;
     background-color: rgba(0, 0, 0, 0.25)
 }
 
-div.games div.game:active {
-    box-shadow: 0 0 10px 5px white;
-    background-color: rgba(0, 0, 0, 0.5)
+div.cardContainer div.card:hover {
+    box-shadow: 0 0 10px 10px white;
+    background-color: rgba(0, 0, 0, 0.45)
 }
 
-div.games div.game p.name {
+div.cardContainer div.card:active {
+    box-shadow: 0 0 10px 5px white;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+div.cardContainer div.card p.name {
     margin: 0;
 }
 
-div.games div.game p.desc {
+div.cardContainer div.card p.desc {
     opacity: 0;
     transition-duration: .15s;
     margin: 0;
     font-size: 14px;
 }
 
-div.games div.game:hover p.desc, div.games div.game:active p.desc {
+div.cardContainer div.card:hover p.desc, div.cardContainer div.card:active p.desc {
     opacity: 1;
 }
 
-div.games div.game.open {
+div.cardContainer div.card.open {
     position: fixed;
     max-width: none;
     width: calc(100vw - 52px);

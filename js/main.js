@@ -1,14 +1,21 @@
 function link(path) {
 	$(".container").fadeOut(150, function () {
-		// $(".loading").fadeIn(150);
-		$.get(path, data => {
+		p = path.replace("/index.html", "")
+		p = path.replace("index.html", "")
+		$.get(p + "/index.html", data => {
 		$(".container").html($(".blurb", data))
 			$(".container").fadeIn(150)
-			p = path.replace("index.html", "")
 			history.pushState(p, p, p)
 			$(".blurb").append("<script>initParallax();</script>")
 		})
 	});
+}
+
+function cardClick(path) {
+	var player = document.createElement("audio")
+	player.src = "/audio/cardClick.mp3"
+	player.play()
+	if (path) link(path)
 }
 
 function toggleVisibility(name) {
