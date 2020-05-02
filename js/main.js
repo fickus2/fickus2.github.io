@@ -2,7 +2,7 @@ function link(path) {
 	$(".container").fadeOut(150, function () {
 		p = path.replace("/index.html", "")
 		p = path.replace("index.html", "")
-		if p.search(/"blog"/) !== -1 p += "/index.html"
+		if (p.search(/"blog"/) !== -1) p += "/index.html"
 		$.get(p, data => {
 		$(".container").html($(".blurb", data))
 			$(".container").fadeIn(150)
