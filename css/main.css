@@ -242,6 +242,8 @@ div.fullBox {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: #0000006e;
+    background-blend-mode: darken;
 }
 
 div.fullBox p {
