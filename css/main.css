@@ -236,8 +236,8 @@ div.fullBox {
     padding-bottom: 5px;
     width: 100vw;
     margin-bottom: 100px;
-    height: calc(100vw * 1080 / 1920 - 15px);
-    background-size: contain;
+    /*     height: calc(100vw * 1080 / 1920 - 15px); */
+    background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
