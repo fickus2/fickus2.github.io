@@ -41,3 +41,22 @@ function initParallax() {
 	
 	console.log(`Successfully initialized ${list.length} parallax containers.`)
 }
+
+
+
+
+var prikolVisible = false;
+
+function showPrikol() {
+  if (!prikolVisible) {
+    var pr = document.createElement("img");
+    pr.src = "epichmak.jpg";
+    pr.className = "prikol";
+    document.querySelector("body").append(pr);
+    prikolVisible = true;
+    setTimeout(() => {
+      pr.remove()
+      prikolVisible = false;
+    }, 1000);
+  }
+}
