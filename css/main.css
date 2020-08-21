@@ -251,11 +251,7 @@ div.fullBox p {
 }
 
 div.fullBox.first {
-    background-image: url('../img/homeBlocks/1.png');
-}
-
-div.fullBox.first p {
-    padding-right: 50%;
+    background: #0b0f15;
 }
 
 div.fullBox.second {
