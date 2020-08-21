@@ -57,6 +57,6 @@ function showPrikol() {
     setTimeout(() => {
       pr.remove()
       prikolVisible = false;
-    }, 1000);
+    }, 5000);
   }
 }
