@@ -243,14 +243,14 @@ div.fullBox p {
     padding: 0 50px;
 }
 
-div.fullBox.1 {
+div.fullBox.first {
     background: url('img/homeBlocks/1.png')
 }
 
-div.fullBox.2 {
+div.fullBox.second {
     background: url('img/homeBlocks/2.png')
 }
 
-div.fullBox.3 {
+div.fullBox.third {
     background: url('img/homeBlocks/3.png')
 }
