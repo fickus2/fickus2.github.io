@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 
 a {
@@ -15,6 +16,7 @@ a {
     .blurb {
         margin-left: 15%;
         margin-right: 15%;
+        /* backdrop-filter: blur(3px); */
     }
 
     .container img {
@@ -23,6 +25,10 @@ a {
 
     .parallax {
         height: 600px;
+    }
+
+    div.fullBox {
+        left: -21.5%;
     }
 }
 
@@ -40,6 +46,10 @@ a {
     .parallax {
         height: 600px;
     }
+
+    div.fullBox {
+        left: -9.5%
+    }
 }
 
 @media (max-width: 767px) { 
@@ -55,6 +65,10 @@ a {
 
     .parallax {
         height: 400px;
+    }
+
+    div.fullBox {
+        left: -1%
     }
 }
 
@@ -212,4 +226,31 @@ div.cardContainer div.card.open {
     height: calc(100vh - 92px);
     left: 0;
     top: 40px;
+}
+
+div.fullBox {
+    position: relative;
+    border-top: 1px solid #ffffff52;
+    border-bottom: 1px solid #ffffff52;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100vw;
+    margin-bottom: 100px;
+}
+
+div.fullBox p {
+    text-align: center;
+    padding: 0 50px;
+}
+
+div.fullBox.1 {
+    background: url('img/homeBlocks/1.png')
+}
+
+div.fullBox.2 {
+    background: url('img/homeBlocks/2.png')
+}
+
+div.fullBox.3 {
+    background: url('img/homeBlocks/3.png')
 }
