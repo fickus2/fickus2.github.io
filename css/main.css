@@ -273,10 +273,8 @@ button.neon {
   transition-duration: .1s;
   outline: none;
   user-select: none;
-  position: absolute;
-  left: 0;
-  bottom: -50%;
   margin: 5px;
+  text-align: center;
 }
 
 button.neon:hover {
@@ -289,11 +287,15 @@ button.neon:active {
   border-color: #ff678d;
 }
 
+div.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
 img.prikol {
-/*   width: 100%;
-  height: 100%; */
   object-fit: contain;
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
