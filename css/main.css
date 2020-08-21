@@ -236,21 +236,32 @@ div.fullBox {
     padding-bottom: 5px;
     width: 100vw;
     margin-bottom: 100px;
+    height: calc(100vw * 1080 / 1920 - 15px);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 div.fullBox p {
     text-align: center;
+    vertical-align: middle;
     padding: 0 50px;
 }
 
 div.fullBox.first {
-    background: url('img/homeBlocks/1.png')
+    background-image: url('../img/homeBlocks/1.png');
+}
+
+div.fullBox.first p {
+    padding-right: 50%;
 }
 
 div.fullBox.second {
-    background: url('img/homeBlocks/2.png')
+    background-image: url('../img/homeBlocks/2.png')
 }
 
 div.fullBox.third {
-    background: url('img/homeBlocks/3.png')
+    background-image: url('../img/homeBlocks/3.png')
 }
