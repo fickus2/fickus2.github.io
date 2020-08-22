@@ -51,11 +51,14 @@
     background: transparent;
     transition-duration: .15s;
     user-select: none;
+    color: #980027;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .menu a:hover {
     color: black;
-    background: white;
+    background: #980027;
 }
 
 .menu a:active {
