@@ -265,7 +265,7 @@ div.fullBox.third {
 }
 
 button.neon {
-  background: #f2003d;
+  background: black;
   color: white;
   font-size: 16px;
   border: transparent solid 1px;
@@ -283,6 +283,8 @@ button.neon:hover {
   border-color: #ff87a5;
   transition: 0.2s;
   transition-delay: 1s;
+  background: #f2003d;
+  color: black;
 }
 
 button.neon span {
