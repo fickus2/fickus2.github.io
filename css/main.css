@@ -275,6 +275,7 @@ button.neon {
   position: relative;
   overflow: hidden;
   transition: 0.2s;
+  border-radius: 0px;
 }
 
 button.neon:hover {
@@ -345,7 +346,7 @@ button.neon:hover span:nth-child(4) {
 }
 
 button.neon:active {
-  box-shadow: 0 0 5px 2px #b5002d;
+  box-shadow: 0 0 8px 5px #b5002d;
   border-color: #ff0040;
   transition: 0.2s;
 }
