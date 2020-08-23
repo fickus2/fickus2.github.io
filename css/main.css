@@ -280,7 +280,7 @@ button.neon {
 
 button.neon:hover {
   box-shadow: 0 0 12px 5px #ff0040, 0 0 4px 2px #ff0040;
-  border-color: white;
+  border-color: #ff87a5;
   transition: 0.2s;
   transition-delay: 1s;
 }
