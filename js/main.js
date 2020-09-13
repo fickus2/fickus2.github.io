@@ -13,10 +13,7 @@ function link(path) {
 }
 
 function cardClick(path) {
-	var player = document.createElement("audio")
-	player.src = "/audio/cardClick.mp3"
-	player.play()
-	if (path) link(path)
+	if (path) window.location.href = path;
 }
 
 function toggleVisibility(name) {
@@ -38,12 +35,10 @@ function initParallax() {
 		var url = list[i].getAttribute('data-src');
 		list[i].style.backgroundImage="url(" + window.location.href + url + ")";
 	}
-	
-	console.log(`Successfully initialized ${list.length} parallax containers.`)
 }
 
 
-
+// Prikol
 
 var prikolVisible = false;
 
