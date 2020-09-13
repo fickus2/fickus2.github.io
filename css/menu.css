@@ -54,6 +54,7 @@
     color: #980027;
     text-transform: uppercase;
     letter-spacing: 4px;
+    text-decoration: none;
 }
 
 .menu a:hover {
