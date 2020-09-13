@@ -379,6 +379,10 @@ div.artCards div {
   margin: 10px;
 }
 
+div.artCards div img {
+    object-fit: cover;
+}
+
 div.artCards div div {
   margin: 0;
 }
