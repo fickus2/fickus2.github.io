@@ -365,3 +365,35 @@ img.prikol {
   left: 50%;
   transform: translateX(-50%);
 }
+
+div.artCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.artCards div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px;
+}
+
+div.artCards div div {
+  margin: 0;
+}
+
+div.artCards div p {
+  margin: 2px 0;
+  font-size: 16px;
+}
+
+div.artCards div p:first-child {
+  font-size: 24px;
+  text-align: center;
+  font-family: serif;  
+}
+
+div.artCards div img {
+  height: 400px;
+}
