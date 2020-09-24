@@ -16,8 +16,8 @@ div.gbvsc-container div.gbvsc {
 }
 
 div.gbvsc-container div.gbvsc:hover {
-  flex-grow: 2;
-  box-shadow: 0 0 2px 2px white;
+  flex-grow: 1.5;
+  box-shadow: 0 0 10px 5px white;
 }
 
 @media (min-width: 979px) {
