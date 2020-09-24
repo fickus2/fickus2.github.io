@@ -11,9 +11,21 @@ div.gbvsc-container div.gbvsc {
   background: var(--bg);
   background-size: contain;
   border: 1px solid white;
-
+  margin: 5px;
 }
 
 div.gbvsc-container div.gbvsc:hover {
   flex-grow: 2;
+}
+
+@media (max-width: 768px) {
+  div.gbvsc-container {
+      margin: 0 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  div.gbvsc-container {
+      margin: 0 1%;
+  }
 }
