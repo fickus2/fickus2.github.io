@@ -2,6 +2,7 @@ div.gbvs-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 19.6%;
 }
 
 div.gbvs-container div.gbvs-card {
@@ -9,6 +10,8 @@ div.gbvs-container div.gbvs-card {
   height: 300px;
   background: var(--bg);
   background-size: contain;
+  border: 1px solid white;
+  
 }
 
 div.gbvs-container div.gbvs-card:hover {
