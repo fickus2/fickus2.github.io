@@ -8,7 +8,7 @@ div.gbvsc-container div.gbvsc {
   flex-grow: 1;
   height: 300px;
   background: var(--bg);
-  background-size: contain;
+  background-size: cover;
   border: 1px solid white;
   margin: 5px;
   transition-duration: .15;
@@ -18,20 +18,23 @@ div.gbvsc-container div.gbvsc:hover {
   flex-grow: 2;
 }
 
-@media (max-width: 979px) {
+@media (min-width: 979px) {
+  /* Large desktop */
   div.gbvsc-container {
-      margin: 0 25%;
+    margin: 0 25%;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Portrait tablet to landscape and desktop */
   div.gbvsc-container {
-      margin: 0 15%;
+    margin: 0 15%;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  /* Landscape phone to portrait tablet */
   div.gbvsc-container {
-      margin: 0 1%;
+    margin: 0 5%;
   }
 }
