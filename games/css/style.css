@@ -12,6 +12,7 @@ div.gbvsc-container div.gbvsc {
   border: 1px solid white;
   margin: 5px;
   transition-duration: .15;
+  background-position: center;
 }
 
 div.gbvsc-container div.gbvsc:hover {
@@ -21,7 +22,7 @@ div.gbvsc-container div.gbvsc:hover {
 @media (min-width: 979px) {
   /* Large desktop */
   div.gbvsc-container {
-    margin: 0 25%;
+    margin: 0 20%;
   }
 }
 
