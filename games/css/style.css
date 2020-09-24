@@ -2,7 +2,6 @@ div.gbvsc-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 19.6%;
 }
 
 div.gbvsc-container div.gbvsc {
@@ -12,10 +11,17 @@ div.gbvsc-container div.gbvsc {
   background-size: contain;
   border: 1px solid white;
   margin: 5px;
+  transition-duration: .15;
 }
 
 div.gbvsc-container div.gbvsc:hover {
   flex-grow: 2;
+}
+
+@media (max-width: 979px) {
+  div.gbvsc-container {
+      margin: 0 25%;
+  }
 }
 
 @media (max-width: 768px) {
