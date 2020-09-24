@@ -11,12 +11,13 @@ div.gbvsc-container div.gbvsc {
   background-size: cover;
   border: 1px solid white;
   margin: 5px;
-  transition-duration: .15;
+  transition-duration: .15s;
   background-position: center;
 }
 
 div.gbvsc-container div.gbvsc:hover {
   flex-grow: 2;
+  box-shadow: 0 0 2px 2px white;
 }
 
 @media (min-width: 979px) {
