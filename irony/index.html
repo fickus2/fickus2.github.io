@@ -1,0 +1,27 @@
+---
+layout: default
+title: Irony
+---
+<style>
+  div.flex {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+
+<div class="blurb">
+  <div class="flex">
+    <img src="img/2123.png" alt="prikol" id="prikol">
+  </div>
+  <script>
+    var prikol = document.querySelector("#prikol");
+
+    prikol.addEventListener("mouseenter", () => {
+      prikol.src = "img/2123.gif";
+    });
+
+    prikol.addEventListener("mouseleave", () => {
+      prikol.src = "img/2123.png";
+    });
+  </script>
+</div>
