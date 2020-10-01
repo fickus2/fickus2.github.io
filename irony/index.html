@@ -6,17 +6,30 @@ title: Irony
   div.flex {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   div.flex #prikol {
     background: transparent;
-    height: 112px;
+    height: fit-content;
+    width: fit-content;
+  }
+
+
+  p.prikolSubtitle {
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin: 0;
   }
 </style>
 
 <div class="blurb">
   <div class="flex">
-    <img src="img/2123.png" alt="prikol" id="prikol">
+    <div class="prikolContainer">
+      <img src="img/2123.png" alt="prikol" id="prikol">
+    </div>
+    <p class="prikolSubtitle">Good girl</p>
   </div>
   <script>
     var prikol = document.querySelector("#prikol");
