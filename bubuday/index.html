@@ -1,0 +1,40 @@
+---
+title: Test Page
+layout: testlayout 
+---
+<div class="blurb bday">
+    <button id="musicButton">Музыка</button>
+<script>
+  var music = new Audio();
+  var startedPlaying = false; // Для появления текста при первом нажатии
+  music.volume = 0.25;
+  var musicList = [
+    "music/dova.mp3",
+    ];
+  var i = 0;
+  music.src = musicList[0];
+  music.addEventListener("ended", () => {
+    i++;
+    if (i > musicList.length - 1) i = 0;
+    music.src = musicList[i];
+    music.play();
+  });
+  var musicButton = document.querySelector("#musicButton");
+  musicButton.addEventListener("click", () => {
+    music.play();
+    document.querySelectorAll("p").forEach(v => v.className = "show");
+    musicButton.className = "hide";
+    musicButton.disabled = true;
+    setTimeout(() => {
+      musicButton.style.display = "none";
+    }, 1000) // 1000 здесь - секунда, то есть секунду идёт анимация исчезновения кнопки, это можно потом поменять
+  });
+</script>
+    <p>Test Paragraph</p>
+    <script>
+        document.querySelectorAll("p").forEach((v, i) => {
+          v.style.animationDelay = 1 + 0.5 * (i + 1) + "s";
+        });
+      </script>
+
+</div>

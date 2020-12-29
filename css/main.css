@@ -401,3 +401,47 @@ div.artCards div p:first-child {
 div.artCards div img {
   height: 400px;
 }
+#musicButton {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 7.5px 10px;
+    /* height: 50px; */
+    border-radius: 50px;
+    outline: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+    margin: 10px;
+    transition-duration: 0.1s;
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+  }
+  
+  #musicButton:active {
+    background:rgba(255, 255, 255, 1);
+    color: black;
+  }
+  
+  .bday p {
+    opacity: 0;
+    display: none;
+  }
+  
+  .bday p.show {
+    animation: 1s ease-in-out forwards fade;
+  }
+  
+  #musicButton.hide {
+    animation: 1s ease-in-out backwards reverse fade;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
