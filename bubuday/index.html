@@ -22,7 +22,7 @@ layout: default
   var musicButton = document.querySelector("#musicButton");
   musicButton.addEventListener("click", () => {
     music.play();
-    document.querySelectorAll("p").forEach((v) => {v.style.display = "block"; v.className = "show"});
+    document.querySelectorAll(".bday p, .bday img").forEach((v) => {v.style.display = "block"; v.className = "show"});
     musicButton.className = "hide";
     musicButton.disabled = true;
     setTimeout(() => {
@@ -32,7 +32,7 @@ layout: default
 </script>
     <p style="text-align: center">once it started raining</p>
     <p style="text-align: center">a young guy went to visit his friend</p>
-    <img src="bubuday/img/jeanne.png" alt="say">
+    <img src="img/jeanne.png" alt="say">
     <p style="text-align: center; font-size: 12px" >Credits: 星の破線 - DOVA-SYNDROME; @Cygames, Inc.</p>
 <script>
         document.querySelectorAll("p").forEach((v, i) => {

@@ -423,12 +423,12 @@ div.artCards div img {
     color: black;
   }
   
-  .bday p {
+  .bday p, .bday img {
     opacity: 0;
     display: none;
   }
   
-  .bday p.show {
+  .bday p.show, .bday img.show {
     animation: 1s ease-in-out forwards fade;
   }
   
