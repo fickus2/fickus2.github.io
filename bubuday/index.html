@@ -22,7 +22,7 @@ layout: default
   var musicButton = document.querySelector("#musicButton");
   musicButton.addEventListener("click", () => {
     music.play();
-    document.querySelectorAll("p").forEach(v => v.className = "show");
+    document.querySelectorAll("p").forEach((v) => {v.style.display = "block"; v.className = "show"});
     musicButton.className = "hide";
     musicButton.disabled = true;
     setTimeout(() => {
