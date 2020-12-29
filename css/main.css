@@ -428,7 +428,7 @@ div.artCards div img {
   }
   
   .bday p.show, .bday img.show {
-    animation: 1s ease-in-out forwards fade;
+    animation: 4s ease-in-out forwards fade;
   }
   
   #musicButton.hide {
