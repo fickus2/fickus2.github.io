@@ -27,7 +27,9 @@ article h1 {
 }
 
 article h2 {
-    font-size: 35px;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
 }
 
 article h3 {
