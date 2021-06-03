@@ -10,11 +10,11 @@ title: Blog
     <div class="post" onclick="location.href = '{{ post.url }}'">
         <img src="{{ post.cardBG }}">
         <div class="info">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.description }}</p>
             <div class="date">
                 Posted: {{ post.date | date: '%B %d, %Y' }}
             </div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.description }}</p>
         </div>
     </div>
     {% endfor %}
