@@ -45,6 +45,7 @@ article h4 {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
 }
 
 .posts > div {
@@ -55,6 +56,7 @@ article h4 {
     height: 250px;
     overflow: hidden;
     transition-duration: .1s;
+    position: relative;
 }
 
 .posts > div:active {
@@ -66,9 +68,10 @@ article h4 {
     text-decoration: none;
 }
 
-.info {
+.posts > div .info {
     padding: 10px;
-    transform: translateY(-100%);
+    position: absolute;
+    bottom: 0;
     background: linear-gradient(transparent, rgba(0 0 0 / 0.5) 30%);
     width: 250px;
     box-sizing: border-box;
