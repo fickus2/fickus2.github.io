@@ -68,11 +68,14 @@ article h4 {
 
 .info {
     padding: 10px;
-    position: absolute;
-    bottom: 0;
+    transform: translateY(-100%);
     background: linear-gradient(transparent, rgba(0 0 0 / 0.5) 30%);
     width: 250px;
     box-sizing: border-box;
+}
+
+.info div.date {
+    margin-top: 5px !important;
 }
 
 .posts > div img {
