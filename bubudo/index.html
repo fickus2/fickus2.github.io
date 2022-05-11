@@ -1,56 +1,17 @@
 <html> 
     <head> 
         <title>Бюро</title>
-        <style>
-            .rena {
-                text-align: center;
-            }
-
-            .splash {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                background: white;
-                z-index: 200;
-                color: black;
-                text-align: center;
-                line-height: 90vh;
-            }
-            
-            .splash.display-none {
-                position: fixed;
-                opacity: 0;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                background: white;
-                z-index: -10;
-                color: black;
-                text-align: center;
-                line-height: 90vh;
-                transition: all 5s;
-            }
-            @keyframes fadeIn {
-                to{
-                    opacity: 1;
-                }
-            }
-
-            .fade-in {
-                opacity: 0;
-                animation: fadeIn 2.5s ease-in forwards;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body> 
-        <div class="splash">
+        <div class="splash"> 
             <h1 class="fade-in">buro of memories</h1>
         </div>    
         <body style="background-color:black;">
-        <h1><center>Do you want to turn on music while reading? The music is Bombyx Mori.</center></h1>
+        <h2 class="rena">Do you want to turn on music while reading? The music is Bombyx Mori.</h1>
+        <div class="container">
+            <button class="btn btn1">Yes, I want.</button>
+        </div> 
         <p class="rena"><img src="nowhere to run.png"></img></p>
         <h2>Бездонная яма</h2>
         <p class="rena">Я канул в лепту,
