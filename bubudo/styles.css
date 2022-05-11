@@ -42,8 +42,10 @@
     animation: fadeIn 1s ease-in forwards;
 }
 
+
 .container {
     text-align: center;
+
 }
 
 .btn {
@@ -61,7 +63,7 @@
     color: #980027; 
 }
 .btn1:hover {
-    color: #fff; 
+    color: black; 
 
 }
 .btn::before {
@@ -80,4 +82,9 @@
 }
 .btn1:hover::before { 
     height: 180%;
+}
+
+
+#icon {
+    cursor: pointer;
 }
