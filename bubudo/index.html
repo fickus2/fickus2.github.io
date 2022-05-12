@@ -2,17 +2,19 @@
     <head> 
         <title>Бюро</title>
         <link rel="stylesheet" href="styles.css">
+        <body style="background-color:black;"></body>
     </head>
     <body> 
+        
         <div class="splash"> 
             <h1 class="fade-in">buro of memories</h1>
         </div>    
-        <body style="background-color:black;">
+        
         <h2><center>Hey, everything is okay. You did well.</center></h2>
         <h2 class="rena">Do you want to turn on music while reading? The music is Bombyx Mori, please, tap on the image.</h1>
-        <p class="rena"><img src="icon1.png" id="icon">
+        <p class="rena"><img src="icons/icon1.png" id="icon">
         <audio id="dova">
-            <sourse src="dova.mp3" type="audio/mp3">
+            <source src="music/dova.mp3" type="audio/mp3">
         </audio>
         <script> 
             var dova = document.getElementById("dova");
@@ -21,25 +23,34 @@
             icon.onclick = function () {
                 if(dova.paused){
                     dova.play();
-                    icon.src="icon2.png";
+                    icon.src="icons/icon2.png";
             }else {
                 dova.pause();
-                icon.src="icon1.png";
+                icon.src="icons/icon1.png";
             }
-                
             }
             </script>
-        <div class="container">
-            <button id="musicButton" class="btn btn1">Yes, I want.</button>
-        </div> 
+        <script src="app.js"></script>
         <p class="rena">This page created for special people. It isn't a funny-trouble content, it is a science. Dharma of human relationships, they're feelings and souls.</p>
-
-        <p class="rena"><img src="nowhere to run.png"></img></p>
-        <h2>Бездонная яма</h2>
-        <p class="rena">Я канул в лепту,
-           Словно бездна морских очей. 
-           Я канул во всеми забытую мглу,
-           И слов не роняя, я падаю и закрываю глаза. </p>
+        <p class="rena">Some warm and kind memories are kept here. They are a history, they are a life.</p>
+        <p class="rena"><img class="round" src="img/kizu.png">
+        <h2 class="rena">The era of sadness. The era of love.</h2>
+        <h2 class="rena">The history about us.</h2>
+        
+        
         <script src="app.js"></script>    
+        <p class="rena">It is my last present for you.</p>
+        <p class="rena"><img src="img/huggie.png">
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <h1>Credits</h1>
+                <p>hahalohya</p>
+
+            </div>
+
+        </div>
+        <button onclick="togglePopup()">Credits</button>
     </body>    
 </html>

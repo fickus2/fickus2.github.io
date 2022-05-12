@@ -1,0 +1,25 @@
+
+- audio and audio-icon function was created by Easy Tutorials on YouTube. 
+    https://www.youtube.com/watch?v=w5fCIhI0FyE
+
+- big support from Merona/catink123.
+    https://catink123.github.io/
+
+- splash screen after website load by Conor Bailey on YouTube.
+    https://www.youtube.com/watch?v=MOlaldp1Fv4&t=302s
+
+- some frames and rounded corners was created via russian tutorial. 
+    http://htmlbook.ru/faq/kak-sdelat-kruglye-izobrazheniya
+
+- particles by Online Tutorials on YouTube. 
+    https://www.youtube.com/watch?v=ajZjivqBdcY
+
+- original music Bombyx Mori - 3,14 · Efrén López · Ciro Montanari · Jordi Prats.
+
+- official Kizuna Ai's art on the top. 
+
+- used programs: Visual Studio Code, Paint, SAI, GitHub desktop, Word.
+
+- used social networks: VK, Discord, Twitter. 
+
+- the start of working was on the 10th of May. The deadline was until 31th of May.

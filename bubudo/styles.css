@@ -48,43 +48,59 @@
 
 }
 
-.btn {
-    border: 1px solid #980027; 
-    background: none;
-    padding: 10px 20px; 
-    cursor: pointer; 
-    margin: 10px; 
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn1 {
-    color: #980027; 
-}
-.btn1:hover {
-    color: black; 
-
-}
-.btn::before {
-    content:"";
-    position: absolute; 
-    left: 0; 
-    weight: 100%;
-    height: 0%;
-    background: #980027; 
-    z-index: -1;
-    transition: 0.8s;
-}
-.btn1::before {
-    top: 0;
-    border-radius: 0 0 50% 50%;
-}
-.btn1:hover::before { 
-    height: 180%;
-}
-
-
 #icon {
     cursor: pointer;
+}
+
+.round {
+    border-radius: 25px; /* Радиус скругления */
+    border: 2px solid #980027; /* Параметры рамки */
+    box-shadow: 0 0 7px #980017; /* Параметры тени */
+}   
+
+
+.popup .overlay {
+    position: fixed;
+    top: 0px; 
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(red, green, blue, alpha);
+    z-index: 1;
+    display: none;
+}
+.popup .content { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.active .overlay {
+    display: block;
+}
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
 }
