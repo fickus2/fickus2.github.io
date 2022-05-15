@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 
 
 
-function togglePopup(){
-    document.getElementsById("popup-1").classList.toggle("active");
+function toggle(){
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup = document.getElementById('popup');
+    blur.classList.toggle('active');
 }

@@ -41,16 +41,24 @@
         <script src="app.js"></script>    
         <p class="rena">It is my last present for you.</p>
         <p class="rena"><img src="img/huggie.png">
-        <div class="popup" id="popup-1">
-            <div class="overlay"></div>
+        <div class="contaner" id="blur">
             <div class="content">
-                <div class="close-btn" onclick="togglePopup()">&times;</div>
-                <h1>Credits</h1>
-                <p>hahalohya</p>
-
+                <h2>yyhsadhadh jhjhdajdahjhjahdjh hjahjdhwewhqkjehq</h2>
+                <a href="#" onclick="toggle()">Credits</a>
             </div>
-
         </div>
-        <button onclick="togglePopup()">Credits</button>
+        <div id="popup">
+            <h2>lolalladjkadjk jkajdkjalkhwkhe hwhkeahkehj ahj</h2>
+            <p>salam salsaklkl kjkehkqhj hkjqhekqejhq jqwjehkqheqjheq yuywkqjehjkq </p>
+            <a href="#" onclick="toggle()">Credits</a>
+        </div>
+        <script type="javascript">
+            function toggle(){
+                var blur = document.getElementById('blur');
+                blur.classList.toggle('active');
+                var popup = document.getElementById('popup');
+                blur.classList.toggle('active');
+            }
+        </script>
     </body>    
 </html>
